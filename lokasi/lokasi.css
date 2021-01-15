@@ -63,11 +63,12 @@ nav{
     position: fixed;
     width: 100%;
     display: grid;
-    min-height: 50px;
     grid-auto-flow: column;
+    min-height: 50px;
     background-color: #27ae60;
     color: white;
     padding: 10px;
+
 }
 
 nav a{
@@ -87,12 +88,12 @@ nav a{
 }
 
 #logreg-nav{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     font-family: 'Poppins', sans-serif;
     justify-content: end;
-    align-content: center;
-    grid-auto-flow: column;
-    padding-right: 20%;
+    align-items: center;
+    padding-right: 10%;
     grid-gap: 50px;
     font-size: 24px;
 }
@@ -162,4 +163,15 @@ nav a{
     font-size: 34px;
     font-weight: 750;
     padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    #logreg-nav {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        grid-gap: 10px;
+        font-size: 24px;
+        justify-content: end;
+    }
 }
